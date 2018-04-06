@@ -1,0 +1,24 @@
+{
+  "name": "pokemonapi",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "ajv": "^6.4.0",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.2",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1",
+    "react-spinners": "^0.2.6",
+    "recharts": "^1.0.0-beta.10"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
