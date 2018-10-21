@@ -9,21 +9,18 @@ const POKEMON_PATH = "/api/v2/pokemon/"
 const POKEMON_SPECIES_PATH = "/api/v2/pokemon-species/"
 
 class Pokemon extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            pokemon: {
-                id: -1,
-                name: undefined,
-                sprites: [],
-                types: [],
-                descriptions: [],
-                color: undefined,
-                stats: []
-            },
-            loading: false,
-            searchValue: undefined
-        }
+    state = {
+        pokemon: {
+            id: -1,
+            name: undefined,
+            sprites: [],
+            types: [],
+            descriptions: [],
+            color: undefined,
+            stats: []
+        },
+        loading: false,
+        searchValue: undefined
     }
 
     getPokemon = (pokemon, event) => {

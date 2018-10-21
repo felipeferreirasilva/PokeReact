@@ -2,14 +2,13 @@ import React from 'react'
 import { BarChart, XAxis, YAxis, Bar } from 'recharts'
 
 const Data = props => {
-    let description = undefined
+    let description = ""
 
-    for (var i = 0; i < props.pokemon.descriptions.length; i++) {
-        if (props.pokemon.descriptions[i].language.name === "en") {
-            description = props.pokemon.descriptions[i].flavor_text
-            break
-        }
-    }
+    props.pokemon.descriptions.map(desc => (
+        desc.language.name === "en" && (
+            description =  desc.flavor_text
+        )
+    ))
 
     let statsData = [];
 
