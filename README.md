@@ -1,7 +1,7 @@
 # PokeReact
 A full Pokedex create with React, using the PokeApi.
 
-Technologies: REACT / NODE
+Technologies: REACT
 
 Author: Felipe Silva
 
